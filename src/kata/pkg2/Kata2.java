@@ -21,11 +21,11 @@ public class Kata2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Integer [] data = ArrayGenerator.Generate_Random(30, 0, 10);
+        String [] data = ArrayGenerator.Generate_Random_String(10, 5);
         Histogram histr = new Histogram(data);
-        Map <Integer, Integer> histo = histr.getHistogram();
+        Map <String, Integer> histo = histr.getHistogram();
    
-        for (Map.Entry<Integer, Integer> entry : histo.entrySet()) {
+        for (Map.Entry<String, Integer> entry : histo.entrySet()) {
         System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue()); }
     }
     
